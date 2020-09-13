@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Teccnical Documentation Page</title>
+</head>
+<body>
+	<div class="core-container">
+<main id="main-doc" class="container1">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+    <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+    <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM).</li>
+    <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server.</li>
+    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+  </section>
+  
+  <section class="main-section" id="Hello_World">
+    <header>Hello World</header>
+    <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+    <code>function greetMe(yourName) { alert("Hello " + yourName); }
+        greetMe("World");</code>
+    <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+  </section>
+  
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+    <code>if (true) { var x = 5; } console.log(x); // 5</code>
+    <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+  </section>
+  
+  <section class="main-section" id="Global_Variables">
+    <header>Global Variables</header>
+    <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
+    <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+  </section>
+  
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
+    <code>const PI = 3.14;</code>
+    <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
+    <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+    <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5;
+      
+        }</code>
+    <p> Another Example Could be: </p>
+    <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
+    
+  </section>
+  
+  <section class="main-section" id="Reference">
+    <header>Reference</header> 
+    <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/">MDN</a></p>
+  </section>
+  
+</main>
+
+<nav id="navbar" class="container2">
+  <header>JS Documentation</header>
+  <a href="#Introduction" class="nav-link">Introduction</a>
+  <a href="#Hello_World" class="nav-link">Hello World</a>
+  <a href="#Variables" class="nav-link">Variables</a>
+  <a href="#Global_Variables" class="nav-link">Global Variables</a>
+  <a href="#Constants" class="nav-link">Constants</a>
+  <a href="#Reference" class="nav-link">Reference</a>
+</nav>
+</div>
+</body>
+</html>
